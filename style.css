@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+/* variables */
+:root {
+  --bgColor: #5ad2f4;
+  --accentColor: #62bec1;
+  --lightGr: #515e5d;
+  --darkGr: #293232;
+  --brad: .2rem;
+  --pad: 5px;
+  --marg: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  color: var(--lightGr);
+  background-color: var(--bgColor);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: var(--marg)
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.output {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  background-color: white;
+  border-radius: var(--brad);
+  height: 50vh;
+  min-width: 50vw;
+  padding:0 10px;
+}
+
+.item {
+  padding: var(--pad);
+ 
+}
+
+p {
+  padding: var(--pad);
+  margin: var(--marg);
+  font-size: 1.3rem;
+}
+
+button.item {
+  padding: 0 1em;
+  font-size: 1rem;
+  color: var(--lightGr);
+  background: var(--accentColor);
+  border-radius: var(--brad);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 10px auto;
+}
+label{
+  display: inline-block;
+  font-size: 1.5rem;
+  margin:0 5px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+label.fromdate{
+  margin-right: 18px;
+  margin-left: 15px;
+}
+select{
+  text-transform: uppercase;
+  padding: 2px;
+  
+}
+select.fromyear{
+  margin-right: 25px;
+}
